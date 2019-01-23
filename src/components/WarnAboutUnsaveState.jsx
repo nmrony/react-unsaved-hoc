@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-class NavigationPrompt extends React.Component {
+class WarnAboutUnsaveState extends React.Component {
   constructor(props) {
     super(props);
     this.state = { nextLocation: null, openModal: false };
@@ -14,7 +14,6 @@ class NavigationPrompt extends React.Component {
   componentDidMount() {
     this.unblock = this.props.history.block(nextLocation => {
       if (this.props.when) {
-        this.preventReload();
         this.setState({
           openModal: true,
           nextLocation: nextLocation
@@ -22,6 +21,10 @@ class NavigationPrompt extends React.Component {
       }
       return !this.props.when;
     });
+  }
+
+  componentDidUpdate() {
+    this.preventReload();
   }
 
   componentWillUnmount() {
@@ -38,7 +41,7 @@ class NavigationPrompt extends React.Component {
   }
 
   preventReload() {
-    window.onbeforeunload = this.props.when && (() => true);
+    window.onbeforeunload = (this.props.when && (() => true)) || null;
   }
 
   navigateToNextLocation() {
@@ -51,9 +54,9 @@ class NavigationPrompt extends React.Component {
   }
 }
 
-NavigationPrompt.propTypes = {
+WarnAboutUnsaveState.propTypes = {
   when: PropTypes.bool.isRequired,
   children: PropTypes.func.isRequired
 };
 
-export default withRouter(NavigationPrompt);
+export default withRouter(WarnAboutUnsaveState);

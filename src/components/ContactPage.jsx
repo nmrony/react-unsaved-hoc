@@ -4,7 +4,8 @@ import Swal from 'sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss';
 import * as Yup from 'yup';
 import SimpleEmailForm from './ContactFormComponent';
-import NavigationAlertPrompt from './NavigationAlertPrompt';
+import WarnAboutUnsaveState from './WarnAboutUnsaveState';
+
 function showAlert(onConfirm = () => {}, onCancel = () => {}) {
   Swal.fire({
     title: 'Are you sure?',
@@ -35,14 +36,14 @@ const Contact = () => (
       {props => (
         <>
           {/* <EmailFormWithWarning {...props} warningMessage="This message is showing from props and i18n friendly" /> */}
-          <NavigationAlertPrompt when={props.dirty}>
+          <WarnAboutUnsaveState when={props.dirty}>
             {(isOpen, onConfirm, onCancel) => {
               if (isOpen) {
                 showAlert(onConfirm, onCancel);
               }
               return <SimpleEmailForm {...props} />;
             }}
-          </NavigationAlertPrompt>
+          </WarnAboutUnsaveState>
           <br />
           <h3>
             <strong>Debug</strong>
