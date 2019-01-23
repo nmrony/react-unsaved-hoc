@@ -1,8 +1,7 @@
 import { Field, Form } from 'formik';
 import React from 'react';
-import warnAboutUnsavedState from './warnAboutUnsavedState';
 
-const SampleEmailForm = ({ touched, errors, isSubmitting }) => (
+const SimpleEmailForm = ({ touched, errors, isSubmitting }) => (
   <Form>
     <div className="field">
       <div className="control">
@@ -20,4 +19,4 @@ const SampleEmailForm = ({ touched, errors, isSubmitting }) => (
   </Form>
 );
 
-export default warnAboutUnsavedState(SampleEmailForm);
+export default SimpleEmailForm;
