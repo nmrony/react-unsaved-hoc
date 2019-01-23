@@ -1,13 +1,15 @@
 {
-  "main.css": "/react-unsaved-hoc/static/css/main.4f479349.chunk.css",
-  "main.js": "/react-unsaved-hoc/static/js/main.574ebf0e.chunk.js",
-  "main.js.map": "/react-unsaved-hoc/static/js/main.574ebf0e.chunk.js.map",
-  "static/js/1.911bfde7.chunk.js": "/react-unsaved-hoc/static/js/1.911bfde7.chunk.js",
-  "static/js/1.911bfde7.chunk.js.map": "/react-unsaved-hoc/static/js/1.911bfde7.chunk.js.map",
+  "main.css": "/react-unsaved-hoc/static/css/main.a3997f45.chunk.css",
+  "main.js": "/react-unsaved-hoc/static/js/main.bc8163d8.chunk.js",
+  "main.js.map": "/react-unsaved-hoc/static/js/main.bc8163d8.chunk.js.map",
+  "static/css/1.e1caa059.chunk.css": "/react-unsaved-hoc/static/css/1.e1caa059.chunk.css",
+  "static/js/1.ca387648.chunk.js": "/react-unsaved-hoc/static/js/1.ca387648.chunk.js",
+  "static/js/1.ca387648.chunk.js.map": "/react-unsaved-hoc/static/js/1.ca387648.chunk.js.map",
   "runtime~main.js": "/react-unsaved-hoc/static/js/runtime~main.f5608462.js",
   "runtime~main.js.map": "/react-unsaved-hoc/static/js/runtime~main.f5608462.js.map",
-  "static/css/main.4f479349.chunk.css.map": "/react-unsaved-hoc/static/css/main.4f479349.chunk.css.map",
+  "static/css/1.e1caa059.chunk.css.map": "/react-unsaved-hoc/static/css/1.e1caa059.chunk.css.map",
+  "static/css/main.a3997f45.chunk.css.map": "/react-unsaved-hoc/static/css/main.a3997f45.chunk.css.map",
   "index.html": "/react-unsaved-hoc/index.html",
-  "precache-manifest.6f3a4468f18453f9d40c7ab700ccd4d1.js": "/react-unsaved-hoc/precache-manifest.6f3a4468f18453f9d40c7ab700ccd4d1.js",
+  "precache-manifest.3afa122fc992be368fc4f6710c372efe.js": "/react-unsaved-hoc/precache-manifest.3afa122fc992be368fc4f6710c372efe.js",
   "service-worker.js": "/react-unsaved-hoc/service-worker.js"
 }
