@@ -8,7 +8,7 @@ import WarnAboutUnsaveState from './WarnAboutUnsaveState';
 
 function showAlert(onConfirm = () => {}, onCancel = () => {}) {
   Swal.fire({
-    title: 'Are you sure?',
+    title: 'Warn using RenderProps',
     text: 'All your unsaved data will be gone forever.',
     type: 'warning',
     showCancelButton: true,
