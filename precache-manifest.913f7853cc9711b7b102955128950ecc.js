@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-unsaved-hoc/static/css/1.e1caa059.chunk.css"
   },
   {
-    "revision": "dba32e7004a98d25ab8f735b29306380",
+    "revision": "57688fcbd1f7cd74a7c6f1575a2c4dc6",
     "url": "/react-unsaved-hoc/index.html"
   }
 ];
