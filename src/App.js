@@ -17,6 +17,7 @@ class App extends Component {
             <div className="hero-body has-text-centered">
               <div className="container">
                 <h1 className="title">Warn on Dirty</h1>
+                <h1 className="subtitle">Created through render props</h1>
               </div>
             </div>
           </section>
